@@ -1,0 +1,23 @@
+.wrapper-flex{
+  @include wrapper;
+  box-sizing: content-box;
+}
+
+.wrapper-row {
+  padding: 0 1.5rem
+}
+
+.header--top{
+  height: 15rem;
+  padding-top: 1rem;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+.header--center{
+ padding: 12vh 0 13vh 0;
+}
+
+.header-wrapper__button{
+  margin-top: 10vh;
+}
