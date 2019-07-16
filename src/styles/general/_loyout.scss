@@ -1,11 +1,12 @@
 .wrapper-flex {
-  @include wrapper;
-  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
 }
 
-.wrapper-row {
-  padding: 0 1.5rem
-}
+
 
 .header {
   background: linear-gradient(to right, rgba($color-primary-bg, 1) 40%, rgba($color-secondary-bg, 1) 100%);
@@ -53,5 +54,15 @@
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     animation: Gradient 30s linear infinite alternate;
+  }
+}
+
+.project {
+  &__wrapper {
+    box-sizing: border-box;
+      padding: {
+      top: $margin-primary-top;
+      bottom: $margin-primary-bottom;
+    }
   }
 }

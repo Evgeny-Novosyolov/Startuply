@@ -9,11 +9,11 @@
   align-items: center;
 }
 
-@mixin widthHeader($n, $width) {
+@mixin widthProject($n, $width, $off) {
   $val: 100 /12 *$n;
 
   @media screen and (max-width: $width) {
-    width: $val;
+    width: calc((#{$val} * 1%) - #{$off}*2);
     @content;
   }
 }
