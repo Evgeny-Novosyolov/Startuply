@@ -9,34 +9,16 @@
   align-items: center;
 }
 
-@mixin font-h2 {
-  font-size: $font-h2;
-  font-weight: 700;
-  letter-spacing: 3.2px;
-  line-height: 1.13;
-  text-transform: uppercase;
-
-}
-
-
-@mixin pricing($n, $width) {
-  $val: 100% / 12 * $n;
-
-  @media screen and (max-width: $width) {
-    width: #{calc(#{$val} - #{15px})
-  }
-
-  ;
-  @content;
-}
-}
-
-
-@mixin widthHeader($n,$width) {
+@mixin widthHeader($n, $width) {
   $val: 100 /12 *$n;
 
   @media screen and (max-width: $width) {
     width: $val;
-  @content;
+    @content;
+  }
 }
+
+@mixin marginBox ($numT, $numB) {
+  margin-top: $margin-primary-top - $numT;
+  margin-bottom: $margin-primary-bottom - $numB;
 }

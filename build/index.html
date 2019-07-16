@@ -30,74 +30,122 @@
  		        </nav>
  		        <div class="header__recording recording">
  		          <span class="recording__login">Login</span>
- 		          <button class="recording__button">Sign up Free</button>
+ 		          <button class="button recording__button button--primary">Sign up Free</button>
  		        </div>
  		      </div>
  		      <div class="header--center">
  		        <div class="header-wrapper__text">
- 		          <span class="header__subtitle">We are hard, We pay Hard</span>
+ 		          <span class="header__subtitle subtitle">We are hard, We pay Hard</span>
  		          <h1 class="header__title">We are a design &#38; development agency.</h1>
- 		          <span class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+ 		          <span class="header__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
  		            incididunt ut labore et dolore magna aliqua.</span>
  		        </div>
  		        <div class="header-wrapper__button">
- 		          <span class="button-dot"></span>
- 		          <span class="button-dot"></span>
- 		          <span class="button-dot"></span>
+ 		          <span class="button-wrapper"><span class="button-dot"></span></span>
+ 		          <span class="button-wrapper"><span class="button-dot"></span></span>
+ 		          <span class="button-wrapper"><span class="button-dot"></span></span>
  		        </div>
  		      </div>
  		      <div class="header--bottom">
  		        <div class="header__block-offers block-offers">
- 		          <div class="block-offers__box box">
- 		            <div class="icon-wrapper"><i class="fas fa-desktop"></i></div>
- 		            <h3 class="box__title">Web Development</h3>
- 		            <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
- 		              incididunt ut labore et dolore magna aliqua.</p>
- 		            <ul class="box__list">
- 		              <li class="box__item">Web Design</li>
- 		              <li class="box__item">Online catalogues</li>
- 		              <li class="box__item">Portal systems</li>
- 		            </ul>
- 		            <button class="button button--read">Read More</button>
- 		          </div>
- 		          <div class="block-offers__box box">
- 		            <div class="icon-wrapper"><i class="fas fa-palette"></i></div>
- 		            <h3 class="box__title">Graphic Design</h3>
- 		            <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
- 		              incididunt ut labore et dolore magna aliqua.</p>
- 		            <ul class="box__list">
- 		              <li class="box__item">Web Design</li>
- 		              <li class="box__item">Online catalogues</li>
- 		              <li class="box__item">Portal systems</li>
- 		            </ul>
- 		            <button class="button button--read">Read More</button>
- 		          </div>
- 		          <div class="block-offers__box box">
- 		            <div class="icon-wrapper"><i class="fas fa-bullseye"></i></div>
- 		            <h3 class="box__title">Internet Marketing</h3>
- 		            <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
- 		              incididunt ut labore et dolore magna aliqua.</p>
- 		            <ul class="box__list">
- 		              <li class="box__item">Web Design</li>
- 		              <li class="box__item">Online catalogues</li>
- 		              <li class="box__item">Portal systems</li>
- 		            </ul>
- 		            <button class="button button--read">Read More</button>
- 		          </div>
+ 		          <label for="Web">
+ 		            <input type="radio" id="Web" name="box-list" value="web" checked>
+ 		            <div class="block-offers__box box">
+ 		              <div class="icon-wrapper"><i class="fas fa-desktop"></i></div>
+ 		              <h3 class="box__title">Web Development</h3>
+ 		              <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+ 		                incididunt ut labore et dolore magna aliqua.</p>
+ 		              <ul class="box__list">
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Web Design</li>
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Online catalogues</li>
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Portal systems</li>
+ 		              </ul>
+ 		              <button class="button button--read button__box">Read More</button>
+ 		            </div>
+ 		          </label>
+ 		          <label for="Design">
+ 		            <input type="radio" id="Design" name="box-list" value="design">
+ 		            <div class="block-offers__box box">
+ 		              <div class="icon-wrapper"><i class="fas fa-palette"></i></div>
+ 		              <h3 class="box__title">Graphic Design</h3>
+ 		              <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+ 		                incididunt ut labore et dolore magna aliqua.</p>
+ 		              <ul class="box__list">
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Web Design</li>
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Online catalogues</li>
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Portal systems</li>
+ 		              </ul>
+ 		              <button class="button button--read button__box">Read More </button>
+ 		            </div>
+ 		          </label>
+ 		          <label for="Marketing">
+ 		            <input type="radio" id="Marketing" name="box-list" value="marketing">
+ 		            <div class="block-offers__box box">
+ 		              <div class="icon-wrapper"><i class="fas fa-bullseye"></i></div>
+ 		              <h3 class="box__title">Internet Marketing</h3>
+ 		              <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+ 		                incididunt ut labore et dolore magna aliqua.</p>
+ 		              <ul class="box__list">
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Web Design</li>
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Online catalogues</li>
+ 		                <li class="box__item"><i class="fas fa-arrow-circle-right"></i>Portal systems</li>
+ 		              </ul>
+ 		              <button class="button button--read button__box">Read More</button>
+ 		            </div>
+ 		          </label>
+ 		
  		        </div>
  		      </div>
  		    </div>
  		  </div>
  		</header>
- 		<div class="div">
- 		  <div>
- 		    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo esse, eligendi ipsum at consequuntur numquam et odit dolores sapiente minima incidunt quae unde rerum alias quaerat reiciendis facilis. Quas quod eaque laudantium aspernatur? Recusandae totam nisi dolor sunt corrupti voluptatibus illo voluptates doloremque dolorum odit, minima maxime. Velit molestiae cum nihil magni blanditiis! Incidunt ex pariatur non omnis architecto, amet aspernatur cupiditate cum itaque voluptate molestiae voluptatem sint dolore, enim reprehenderit quos assumenda officia est praesentium atque porro! At eaque autem tenetur perspiciatis quibusdam incidunt exercitationem laborum velit, esse architecto ab deserunt deleniti quia asperiores consequuntur laboriosam, ex libero?
+ 		<section class="history">
+ 		  <div class="history__wrapper">
+ 		      <span class="history__subtitle subtitle subtitle--secondary">About Our History</span>
+ 		      <h2 class="history__title title--secondary">We are Startuply and we create 
+ 		          efficient web design and branding.</h2>
+ 		      <p class="history__text text">
+ 		          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea commodo consequat. Duis aute irure dolor. In reprehenderit in voluptate velit esse cillum 
+ 		          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+ 		      </p>
+ 		      <button class="button history__button button--read">Read More</button>
  		  </div>
- 		  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas quas repudiandae aspernatur magnam in id, reiciendis pariatur totam officia facilis dolorum odit rem provident eius tempora molestiae labore autem vero quos tenetur aliquid consequatur. Fugit perferendis repellat quisquam fuga! Porro reprehenderit ipsa iure, corporis unde cupiditate neque aspernatur minima.</p>
- 		</div>
+ 		</section>
+ 		<section calss="comment">
+ 		  <div class="comment__wrapper">
+ 		    <ul class="comment__block">
+ 		      <li class="comment__box open">
+ 		        <p class="comment__text comment--text">&#8220; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+ 		          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam 1
+ 		          &#8221;
+ 		        </p>
+ 		        <div id="data"></div>
+ 		        <span class="comment__author text text--white">- JIMMY FERRARA , General Manager</span>
+ 		      </li>
+ 		      <li class="comment__box">
+ 		        <p class="comment__text comment--text ">&#8220; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+ 		          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam 2
+ 		          &#8221;
+ 		        </p>
+ 		      
+ 		        <span class="comment__author text text--white">- JIMMY FERRARA , General Manager</span>
+ 		      </li>
+ 		      <li class="comment__box">
+ 		        <p class="comment__text comment--text ">&#8220; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+ 		          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam 3
+ 		          &#8221;
+ 		        </p>
+ 		        <span class="comment__author text text--white">- JIMMY FERRARA , General Manager</span>
+ 		      </li>
+ 		    </ul>
+ 		    <div class="comment-wrapper__button">
+ 		      <span class="button-wrapper comment__button"><span class="button-dot dots-color"></span></span>
+ 		      <span class="button-wrapper comment__button"><span class="button-dot"></span></span>
+ 		      <span class="button-wrapper comment__button"><span class="button-dot"></span></span>
+ 		    </div>
+ 		  </div>
+ 		</section>
  	 	</div>
- 	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
- 	  crossorigin="anonymous"></script>
  	<script type="text/javascript" src="js/all.js"></script>
  </body>
 

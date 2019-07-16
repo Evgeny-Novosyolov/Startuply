@@ -15,7 +15,7 @@ html {
   font-size: 62.5%;
 }
 
-body{
+body {
   max-width: 192rem;
   min-width: 32rem;
   background: $color-primary-text;
@@ -23,4 +23,79 @@ body{
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   color: $color-primary-text;
+}
+.body-wrapper{
+  position: relative;
+  z-index: 1;
+}
+.header {
+  &__title {
+    font-size: 5vmax;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .box {
+    color: $color-primary-text;
+
+    i {
+      font-size: 6rem;
+      margin-bottom: 3rem;
+
+    }
+
+    &__title {
+      font-size: $size-tertiary-text;
+    }
+
+    &__text,
+    &__item {
+      font-size: $size-primary-text;
+      i {
+        font-size: $size-primary-text;
+        
+      }
+    }
+
+
+  }
+}
+
+.subtitle {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 1.5px;
+  color: $color-primary-text;
+  animation: moveInRight 1s 0.5s;
+  text-transform: uppercase;
+}
+
+.subtitle--secondary {
+  color: $color-secondary-text;
+  margin-bottom: 2.5rem;
+ 
+
+}
+
+
+.title--secondary {
+  font-size: $size-h2-text;
+  color: $color-secondary-text;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 4.5rem;
+}
+
+.text {
+  font-size: $size-secondary-text;
+  color: $color-secondary-text;
+  font-weight: 400;
+}
+.text--white{
+  color:$color-primary-text;
+}
+.comment--text{
+  font-size: $size-comment-text;
+  font-style: italic;
 }

@@ -1,0 +1,42 @@
+.comment{
+  &__wrapper{
+    .open {
+      animation:  commentShow 0.5s cubic-bezier(.58,.15,1,.85) 0.2s both;
+      opacity: 1;
+      display: block;
+    }
+    .dots-color{
+      background: $color-primary-text;
+    }
+  }
+  &__block{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    
+  }
+  &__box{
+    min-width: 100%;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transform: scale(0)
+   
+    
+    
+  }
+  
+  &__author{
+    display: block;
+    margin-top: 2rem;
+  }
+  &-wrapper__button{
+    justify-content: center;
+    margin-top: 6rem;
+   
+  }
+  
+}
+  
