@@ -1,6 +1,7 @@
 /*jshint esversion: 6 */
 //import "../js/imports/blocks";
 
-import "../blocks/comment/comment"
-import "../blocks/project/project"
+import "../blocks/comment/_comment";
+import "../blocks/project/_project";
+import "../blocks/stats/_stats";
 

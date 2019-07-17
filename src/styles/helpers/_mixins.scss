@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-@mixin widthProject($n, $width, $off) {
+@mixin widthBox($n, $width, $off) {
   $val: 100 /12 *$n;
 
   @media screen and (max-width: $width) {

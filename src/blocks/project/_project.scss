@@ -4,17 +4,7 @@
     align-items: center;
   }
 
-  &__subtitle {
-    margin-top: -1rem;
-
-  }
-
-  &__title {
-    margin-top: -2rem;
-    margin-bottom: 1rem;
-  }
-
-  &__nav {
+    &__nav {
     margin-left: auto;
     align-self: self-start;
 
@@ -46,8 +36,7 @@
   &__box {
     //flex: 0 0 370px;
     margin: 6rem 1.5rem 0;
-    $off: 1.5rem;
-    @include widthProject(4, 1920px, $off);
+    @include  widthBox(4, 1920px, $off);
     display: none;
     transform: scale(0);
     perspective: 1500px;

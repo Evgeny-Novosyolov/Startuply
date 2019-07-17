@@ -65,4 +65,43 @@
       bottom: $margin-primary-bottom;
     }
   }
+  &__subtitle {
+    margin-top: -1rem;
+
+  }
+
+  &__title {
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+  }
 }
+
+.stats {
+  &__wrapper {
+    box-sizing: border-box;
+      padding: {
+      top: $margin-primary-top ;
+      bottom: $margin-primary-bottom;
+    }
+  }
+  &__subtitle {
+    margin-top: -1rem;
+
+  }
+
+  &__title {
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+  }
+  &__list{
+    margin-top: 4rem;
+  }
+  &__nem{
+    display: block;
+  }
+  &__nomination{
+    display: block;
+    margin-top: -0.5em;
+  }
+}
+

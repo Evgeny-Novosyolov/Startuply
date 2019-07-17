@@ -72,6 +72,7 @@ body {
 }
 
 .subtitle--secondary {
+  @extend .subtitle;
   color: $color-secondary-text;
   margin-bottom: 2.5rem;
  
@@ -93,9 +94,14 @@ body {
   font-weight: 400;
 }
 .text--white{
+  @extend .text;
   color:$color-primary-text;
 }
 .comment--text{
   font-size: $size-comment-text;
   font-style: italic;
+}
+
+.stats__num{
+  font-size: $size-num-text;
 }
