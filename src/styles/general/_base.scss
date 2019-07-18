@@ -24,10 +24,23 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $color-primary-text;
 }
-.body-wrapper{
+
+
+.logo {
+  width: 22rem;
+  font-size: $size-logo-text;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3.3px;
+  display: block;
+  margin-right: auto;
+}
+
+.body-wrapper {
   position: relative;
   z-index: 1;
 }
+
 .header {
   &__title {
     font-size: 5vmax;
@@ -51,9 +64,10 @@ body {
     &__text,
     &__item {
       font-size: $size-primary-text;
+
       i {
         font-size: $size-primary-text;
-        
+
       }
     }
 
@@ -63,7 +77,7 @@ body {
 
 .subtitle {
   display: block;
-  font-size: 1.6rem;
+  font-size: $size-primary-text;
   line-height: 2;
   letter-spacing: 1.5px;
   color: $color-primary-text;
@@ -75,8 +89,6 @@ body {
   @extend .subtitle;
   color: $color-secondary-text;
   margin-bottom: 2.5rem;
- 
-
 }
 
 
@@ -93,15 +105,40 @@ body {
   color: $color-secondary-text;
   font-weight: 400;
 }
-.text--white{
+
+.text--white {
   @extend .text;
-  color:$color-primary-text;
+  color: $color-primary-text;
 }
-.comment--text{
+
+.comment--text {
   font-size: $size-comment-text;
   font-style: italic;
 }
 
-.stats__num{
+.stats__num {
   font-size: $size-num-text;
+}
+
+.text--tertiary {
+  font-size: $size-tertiary-text;
+  color: $color-secondary-text;
+  font-weight: 400;
+}
+
+
+.text--small {
+  color: $color-tertiary-text;
+  font-size: $size-small-text;
+}
+.text--small-w {
+  @extend .text--small;
+  color: $color-primary-text;
+  font-weight: 400;
+}
+
+.footer--title{
+  @extend .text--tertiary;
+  font-weight: 400;
+  color: $color-primary-text;
 }

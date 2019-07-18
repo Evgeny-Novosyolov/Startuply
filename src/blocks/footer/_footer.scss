@@ -1,0 +1,135 @@
+.footer {
+  color: inherit;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__header {
+    display: flex;
+    height: 5rem;
+
+    &>* {
+      align-self: flex-end;
+      line-height: 1
+    }
+  }
+
+  &__post {
+    li {
+      transition: 0.5s ease-in-out 0.2s;
+    }
+
+    a {
+      transition: 0.5s ease-in-out 0.2s;
+    }
+
+    .post__date {
+      color: $color-primary-text;
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 3;
+    }
+
+    li:hover {
+
+      transform: translateY(-0.5rem);
+
+      a {
+        text-shadow: 3px 3px 2px rgba(145, 150, 150, 1);
+        transition: 0.5s ease-in-out 0.2s;
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out 0.2s;
+        color: $color-tertiary-text;
+      }
+
+    }
+  }
+
+  &__link, &__twitter {
+    a {
+      display: block;
+      position: relative;
+      transition: 0.2s;
+      text-decoration: none;
+      color: inherit;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -1.7rem;
+        bottom: 20%;
+        border: 5px solid transparent;
+        border-left: 6px solid currentColor;
+        display: block;
+        width: 0;
+        height: 0;
+
+      }
+
+      &:hover {
+        color: $color-primary-text;
+        text-shadow: 0px 3px 0px #b2a98f,
+
+          0px 14px 10px rgba(0, 0, 0, 0.15),
+
+          0px 24px 2px rgba(0, 0, 0, 0.1),
+
+          0px 34px 30px rgba(0, 0, 0, 0.1);
+        transform: translateY(-0.2rem);
+
+        &::before {
+          animation: arrowShow 1s linear 0.2s infinite;
+        }
+
+      }
+
+    }
+  }
+  &__twitter{
+    .twitter__date{
+      position: relative;
+      .fa-twitter{
+        position: absolute;
+        left: -0.1rem;
+        bottom: 10%;
+      }
+    }
+
+    a::before{
+      display: none;
+    }
+  }
+  &__bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .menu{
+      //margin-right: auto;
+      flex: 1 1 7rem;
+
+    }
+    .menu__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem
+     
+    }
+    .menu__item {
+      padding: 1rem 2rem;
+    }
+  }
+  &__info{
+
+  }
+}
+

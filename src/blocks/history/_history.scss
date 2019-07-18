@@ -1,26 +1,16 @@
 .history {
   &__wrapper {
     text-align: center;
-  
+
   }
-  &__title{
-    width: 40%;
-    margin: {
-      top: 0;
-      left: auto;
-      right: auto;
-    }
-  }
-  &__text{
-    width: 60%;
-    margin: 0 auto 5rem;
-  }
-  &__button{
+
+  &__button {
     transform: skewY(-5deg);
-    &:hover{
+
+    &:hover {
       transform: skewY(-5deg);
     }
-  
-    
+
+
   }
 }

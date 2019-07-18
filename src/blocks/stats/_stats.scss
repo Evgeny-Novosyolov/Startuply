@@ -7,21 +7,13 @@
     display: flex;
   }
 
-  &__box {
-    @include widthBox(6, 1920px, $off);
-  }
 
   &__list {
     list-style: none;
-    display: flex;
-    @include flex-center;
+
   }
 
-  &__item {
-    &:not(:first-child) {
-      margin-left: 8rem;
-    }
-  }
+
 
   .box--right {
     position: relative;
@@ -67,20 +59,23 @@
         transform: translate(-50%, -50%);
         cursor: pointer;
         z-index: 1;
-        
+
       }
     }
+
     .video {
       display: none;
       opacity: 0;
-      &--open{
+
+      &--open {
         display: block;
         animation: video 0.8s 0.2s ease-in-out both;
       }
     }
-    .btn-closs{
+
+    .btn-closs {
       animation: video 0.8s 0.2s ease-in-out reverse;
     }
   }
-  
+
 }

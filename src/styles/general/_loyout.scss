@@ -45,63 +45,208 @@
     z-index: 20;
   }
 
+  &__title {
+    width: 40%;
+
+    margin: {
+      top: 0;
+      left: auto;
+      right: auto;
+    }
+  }
+
+  &__text {
+    width: 60%;
+    margin: 0 auto 5rem;
+  }
+
 }
 
 .comment {
   &__wrapper {
     padding-top: $margin-primary-top;
-    padding-bottom: 8rem;
+    padding-bottom: 9rem;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     animation: Gradient 30s linear infinite alternate;
   }
+
+  &__block {
+    width: 60%;
+  }
+
+  &__box {
+    min-width: 100%;
+  }
+
+  &__author {
+    margin-top: 2rem;
+  }
+
+  &-wrapper__button {
+    margin-top: 6rem;
+
+  }
 }
 
-.project {
+.project,
+.stats,
+.news {
   &__wrapper {
     box-sizing: border-box;
-      padding: {
+
+    padding: {
       top: $margin-primary-top;
       bottom: $margin-primary-bottom;
     }
   }
-  &__subtitle {
-    margin-top: -1rem;
 
-  }
+  &__subtitle {}
 
   &__title {
     margin-top: -2rem;
     margin-bottom: 1rem;
   }
 }
+
+.project {
+  &__block {
+    box-sizing: content-box;
+    @include WidthBlock($offset);
+  }
+
+  &__box {
+    margin: 5.5rem 1.5rem 0;
+    @include widthBox(4, 1920px, $offset);
+  }
+
+  &-wrapper__img {
+    width: 100%;
+    padding-top: 63%;
+  }
+
+  &__text--strong {
+    margin-top: 1.5rem;
+  }
+
+}
+
+
+
 
 .stats {
-  &__wrapper {
-    box-sizing: border-box;
-      padding: {
-      top: $margin-primary-top ;
-      bottom: $margin-primary-bottom;
+  &__box {
+    @include widthBox(6, 1920px, $offset);
+  }
+
+  &__list {
+    @include flex-center;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 8rem;
     }
   }
-  &__subtitle {
-    margin-top: -1rem;
 
-  }
-
-  &__title {
-    margin-top: -2rem;
-    margin-bottom: 1rem;
-  }
-  &__list{
+  &__list {
     margin-top: 4rem;
-  }
-  &__nem{
-    display: block;
-  }
-  &__nomination{
-    display: block;
-    margin-top: -0.5em;
   }
 }
 
+
+
+
+.news {
+  &__wrapper {
+    padding-bottom: 7rem;
+
+  }
+
+  &__box {
+    margin: 4.5rem 1.5rem 0;
+  }
+
+  &__block {
+    @include flex-center;
+    @include WidthBlock($offset);
+  }
+
+  &__box {
+    @include widthBox(4, 1920px, $offset);
+  }
+
+  &-wrapper__main {
+    margin-top: 4rem;
+  }
+
+  &__text {
+    margin-top: 1rem;
+  }
+
+  &__button {
+    margin-top: 2rem;
+  }
+}
+
+.footer {
+  padding-top: $margin-primary-top *1.87;
+  background: linear-gradient(to right, rgba($color-primary-bg, 1) 40%, rgba($color-secondary-bg, 1) 100%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 21%, 0% 0%);
+
+  &__header {
+    margin-bottom: 3.5rem;
+  }
+
+  &__block {
+    @include flex-center;
+    align-items: stretch;
+    @include WidthBlock($offset);
+  }
+
+  &__box {
+    @include widthBox(3, 1920px, $offset);
+    margin: 2rem 1.5rem 0;
+  }
+
+  &__item {
+    padding: 1rem 0;
+  }
+
+  &__post {
+    li:last-child {
+      border-top: 0.1rem solid $color-primary-text;
+    }
+
+    .post__date {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__link {
+    li {
+      cursor: pointer;
+      padding: 0.7rem;
+      padding-left: $offset;
+    }
+  }
+
+  &__twitter {
+    .twitter__link {
+      padding: $offset*2 0;
+
+    }
+
+    li:last-child {
+      border-top: 0.1rem solid $color-primary-text;
+      
+    }
+    li:first-child a{
+      padding-top: 0;
+    }
+
+    .twitter__date {
+      padding-left: $offset;
+    }
+  }
+}
