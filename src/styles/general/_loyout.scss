@@ -1,16 +1,16 @@
 .wrapper-flex {
   margin: 0 auto;
   max-width: 1200px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: var(--offset);
+  padding-right:var(--offset);
 
 }
 
 
 
 .header {
-  background: linear-gradient(to right, rgba($color-primary-bg, 1) 40%, rgba($color-secondary-bg, 1) 100%);
-  height: 140vh;
+  background: linear-gradient(to right, rgba(var(--color-primary-bg), 1) 40%, rgba(var(--color-secondary-bg), 1) 100%);
+  //height: 140vh;
 
   &--top {
     height: 15rem;
@@ -18,6 +18,18 @@
     display: flex;
     // justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 900px) {
+      margin: 0 -1.5rem;
+      border-bottom: 0.1rem solid rgba(var(--color-primary-text), 0.5);
+      height: auto;
+
+      .header::after {
+        width: 50%;
+      }
+
+    }
   }
 
   &--center {
@@ -26,15 +38,51 @@
 
   &-wrapper__button {
     margin-top: 8vh;
+    flex-wrap: wrap;
   }
+
+  .block-offers {
+    display: flex;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    label {
+      width: calc(100% / 3);
+
+      @media screen and (max-width: 900px) {
+        margin: var(--offset);
+        width: calc(100% - #{var(--offset)}*2);
+
+      }
+    }
+  }
+
+  .box {
+    cursor: pointer;
+    padding: 6rem 4rem 4rem 4rem;
+
+  }
+
+}
+
+.logo {
+  width: 22rem;
+  font-size: var(--size-logo-text);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3.3px;
+  display: block;
+  //margin-right: auto;
 }
 
 .history {
   &__wrapper {
-    background: $color-primary-text;
-    margin-top: -($margin-primary-top);
-    margin-bottom: $margin-primary-bottom;
-    padding-top: $margin-primary-top *2;
+    background: var(--color-primary-text);
+    margin-top: -(var(--margin-primary-top));
+    margin-bottom: var(--margin-primary-bottom);
+    padding-top: var(--margin-primary-top); //*2
     transform: skewY(5deg);
 
     &>* {
@@ -46,7 +94,15 @@
   }
 
   &__title {
-    width: 40%;
+    padding: 0 30%;
+
+    @media(max-width: 1200px) {
+      padding: 0 10%;
+    }
+
+    @media(max-width: 900px) {
+      padding: 0 var(--offset);
+    }
 
     margin: {
       top: 0;
@@ -56,24 +112,37 @@
   }
 
   &__text {
-    width: 60%;
+    padding: 0 20%;
     margin: 0 auto 5rem;
+
+    @media(max-width: 1200px) {
+      padding: 0 5%;
+    }
+
+    @media(max-width: 900px) {
+      padding: 0 var(--offset);
+    }
   }
 
 }
 
 .comment {
   &__wrapper {
-    padding-top: $margin-primary-top;
+    padding-top: var(--margin-primary-top);
     padding-bottom: 9rem;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     animation: Gradient 30s linear infinite alternate;
+    padding-left: 17.3%;
+    padding-right: 17.3%;
+
+    @media (max-width: 900px) {
+      padding-left: var(--offset);
+      padding-right: var(--offset);
+    }
   }
 
-  &__block {
-    width: 60%;
-  }
+  &__block {}
 
   &__box {
     min-width: 100%;
@@ -96,8 +165,8 @@
     box-sizing: border-box;
 
     padding: {
-      top: $margin-primary-top;
-      bottom: $margin-primary-bottom;
+      top: var(--margin-primary-top);
+      bottom: var(--margin-primary-bottom);
     }
   }
 
@@ -110,14 +179,22 @@
 }
 
 .project {
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   &__block {
     box-sizing: content-box;
-    @include WidthBlock($offset);
+    @include WidthBlock(var(--offset));
   }
 
   &__box {
     margin: 5.5rem 1.5rem 0;
-    @include widthBox(4, 1920px, $offset);
+    @include widthBox(4, 1920px, var(--offset));
+    @include widthBox(5, 900px, var(--offset));
+    @include widthBox(10, 720px, var(--offset));
   }
 
   &-wrapper__img {
@@ -136,7 +213,7 @@
 
 .stats {
   &__box {
-    @include widthBox(6, 1920px, $offset);
+    @include widthBox(6, 1920px, var(--offset));
   }
 
   &__list {
@@ -169,11 +246,12 @@
 
   &__block {
     @include flex-center;
-    @include WidthBlock($offset);
+    align-items: stretch;
+    @include WidthBlock(var(--offset));
   }
 
   &__box {
-    @include widthBox(4, 1920px, $offset);
+    @include widthBox(4, 1920px, var(--offset));
   }
 
   &-wrapper__main {
@@ -190,8 +268,8 @@
 }
 
 .footer {
-  padding-top: $margin-primary-top *1.87;
-  background: linear-gradient(to right, rgba($color-primary-bg, 1) 40%, rgba($color-secondary-bg, 1) 100%);
+  padding-top: var(--margin-primary-top); //*1.87
+  background: linear-gradient(to right, rgba(var(--color-primary-bg), 1) 40%, rgba(var(--color-secondary-bg), 1) 100%);
   clip-path: polygon(0% 100%, 100% 100%, 100% 21%, 0% 0%);
 
   &__header {
@@ -201,11 +279,11 @@
   &__block {
     @include flex-center;
     align-items: stretch;
-    @include WidthBlock($offset);
+    @include WidthBlock(var(--offset));
   }
 
   &__box {
-    @include widthBox(3, 1920px, $offset);
+    @include widthBox(3, 1920px, var(--offset));
     margin: 2rem 1.5rem 0;
   }
 
@@ -215,7 +293,7 @@
 
   &__post {
     li:last-child {
-      border-top: 0.1rem solid $color-primary-text;
+      border-top: 0.1rem solid var(--color-primary-text);
     }
 
     .post__date {
@@ -227,26 +305,34 @@
     li {
       cursor: pointer;
       padding: 0.7rem;
-      padding-left: $offset;
+      padding-left: var(--offset);
     }
   }
 
   &__twitter {
     .twitter__link {
-      padding: $offset*2 0;
+      padding: var(--offset) 0; //*2
 
     }
 
     li:last-child {
-      border-top: 0.1rem solid $color-primary-text;
-      
+      border-top: 0.1rem solid var(--color-primary-text);
+
     }
-    li:first-child a{
+
+    li:first-child a {
       padding-top: 0;
     }
 
     .twitter__date {
-      padding-left: $offset;
+      padding-left: var(--offset);
     }
+  }
+
+  &__bottom {
+    font-weight: 400;
+    margin-top: 11rem;
+    padding: 0 var(--offset);
+
   }
 }

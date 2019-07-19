@@ -17,8 +17,8 @@
 .button--primary {
   text-align: center;
   padding: 1.3em 3.5rem;
-  background-color: $color-primary-text;
-  color: $color-primary-bg;
+  background-color: var(--color-primary-text);
+  color: var(--color-primary-bg);
   border-radius: 3em;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 
@@ -40,7 +40,7 @@
     transform: translateY(-0.2rem);
 
     &::after {
-      background: $color-primary-text;
+      background: var(--color-primary-text);
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
     }
@@ -70,7 +70,7 @@
 
   &:hover {
     .button-dot {
-      background: $color-primary-text;
+      background: var(--color-primary-text);
     }
   }
 
@@ -80,7 +80,7 @@
   display: block;
   width: 3.7rem;
   height: 0.7rem;
-  background: $color-secondary-bg;
+  background: var(--color-secondary-bg);
   border-radius: 0.3rem;
   cursor: pointer;
   transition: 0.2s;
@@ -93,8 +93,8 @@
 .button--read {
   position: relative;
   font-weight: 500;
-  font-size: $size-primary-text;
-  color: $color-secondary-bg;
+  font-size: var(--size-primary-text);
+  color: var(--color-secondary-bg);
   transition: 0.2s;
 
   &::after {
@@ -110,7 +110,7 @@
   }
 
   &:hover {
-    color: $color-primary-text;
+    color: var(--color-primary-text);
     text-shadow: 0px 3px 0px #b2a98f,
 
       0px 14px 10px rgba(0, 0, 0, 0.15),
@@ -134,18 +134,18 @@
 
   box-shadow: none;
   background: transparent;
-  font-size: $size-primary-text;
-  color: $color-tertiary-text;
+  font-size: var(--size-primary-text);
+  color: var(--color-tertiary-text);
   padding: 1em 2em;
   text-transform: capitalize;
   font-weight: 400;
   &:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    background: $color-primary-bg;
-    color: $color-primary-text;
+    background: var(--color-primary-bg);
+    color: var(--color-primary-text);
   
     &::after {
-      background: $color-primary-bg;
+      background: var(--color-primary-bg);
     }
   }
 

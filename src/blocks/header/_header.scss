@@ -15,6 +15,9 @@
     top: 15rem;
     z-index: 5;
     opacity: 0.5;
+    @media (max-width: 900px){
+      display: none;
+    }
   }
 
   &__wrapper {}
@@ -22,6 +25,9 @@
   &__subtitle:last-child {
     text-transform: none;
     width: 50%;
+    @media (max-width:900px){
+      width: 100%;
+    }
   }
 
   &__title {
@@ -37,19 +43,27 @@
   color: $color-primary-text;
   text-transform: uppercase;
   font-weight: 400;
+  justify-content: center;
 
 
 
-  
 
   .menu {
     width: 59rem;
     margin-left: 2.5rem;
+    flex-grow: 1;
+
+    @media screen and (max-width: 1100px) {
+      order: 1;
+      margin: 2rem 0 1rem;
+    }
 
     &__list {
       list-style: none;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap; 
+      
     }
 
     &__item {
@@ -125,7 +139,7 @@
   }
 
   .recording {
-    margin-left: auto;
+    margin-left: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,7 +149,12 @@
       cursor: pointer;
     }
 
-
+    @media (max-width: 900px){
+      margin-left: 6rem;
+    }
+    @media (max-width: 515px){
+      margin: 0 auto;
+    }
 
     &__login {}
 
@@ -175,11 +194,9 @@
 
 
   .block-offers {
-
     border-top: 1px solid $color-primary-text;
-
     color: $color-secondary-text;
-    display: flex;
+
   }
 
   .box {
@@ -187,9 +204,14 @@
     //background: $color-primary-text;
     padding: 6rem 4rem 4rem 4rem;
     flex: 1 1 20rem;
-
     height: 0;
 
+    @media screen and (max-width: 900px) {
+      height: auto;
+      background: linear-gradient(-45deg, rgba(#EE7752,0.3), rgba(#E73C7E,0.3), rgba(#23A6D5,0.3), rgba(#23D5AB,0.3));
+      background-size: 400% 400%;
+      animation: Gradient 30s linear infinite alternate;
+    }
 
     &__title {
       margin-bottom: 0.3rem;
@@ -202,7 +224,7 @@
     &__list {
       margin-top: 1.5rem;
       list-style: none;
-      //display: none;
+      display: none;
       opacity: 0;
       height: 0;
     }
@@ -251,6 +273,7 @@
     }
 
     .box__list {
+      display: block;
       animation: listShow 0.3s ease-in 0.2s both;
     }
 
@@ -259,5 +282,17 @@
       animation: listShow 0.3s ease-in 0.35s both;
     }
 
+    @media screen and (max-width:900px) {
+
+      // .button__box {
+      //   display: block;
+      //   animation: listShow 0.3s ease-in 0.35s both;
+      // }
+
+      // .box__list {
+      //   animation: listShow 0.3s ease-in 0.2s both;
+      // }
+     
+    }
   }
 }

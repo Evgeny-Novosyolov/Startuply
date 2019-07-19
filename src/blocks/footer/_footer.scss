@@ -8,7 +8,7 @@
   a {
     display: block;
     text-decoration: none;
-    color: inherit;
+    // color: inherit;
   }
 
   &__header {
@@ -52,7 +52,8 @@
     }
   }
 
-  &__link, &__twitter {
+  &__link,
+  &__twitter {
     a {
       display: block;
       position: relative;
@@ -92,44 +93,71 @@
 
     }
   }
-  &__twitter{
-    .twitter__date{
+
+  &__twitter {
+    .twitter__date {
       position: relative;
-      .fa-twitter{
+
+      .fa-twitter {
         position: absolute;
         left: -0.1rem;
         bottom: 10%;
       }
     }
 
-    a::before{
+    a::before {
       display: none;
     }
   }
-  &__bottom{
+
+  &__bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    .menu{
-      //margin-right: auto;
-      flex: 1 1 7rem;
+    border-top: 0.1rem solid $color-primary-text;
+    // margin-left: -$offset*2;
+    // margin-right: -$offset*2;
+
+    .menu {
+      //flex: 1 1 70rem;
+      flex-grow: 1;
+      // max-width: 70rem;
 
     }
+
     .menu__list {
       display: flex;
-      justify-content: center;
+
       flex-wrap: wrap;
       padding-top: 2.5rem;
-      padding-bottom: 2.5rem
-     
+      padding-bottom: 2.5rem;
+
+      @media screen and (max-width: 66rem) {
+        justify-content: center;
+      }
+
     }
-    .menu__item {
+
+
+    .menu__link {
       padding: 1rem 2rem;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease-in-out 0.1s;
+      &:hover {
+        color: $color-primary-text;
+        transform: scale(1.1);
+      }
+      
     }
   }
-  &__info{
 
+  &__info {
+    display: flex;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    a {display: block;}
   }
 }
-

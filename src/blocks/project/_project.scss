@@ -1,13 +1,12 @@
 .project {
-  &__header {
-    display: flex;
-    align-items: center;
+  &__info {
+    flex-grow: 1;
   }
-
   &__nav {
     margin-left: auto;
     align-self: self-start;
-
+    flex-grow: 1;
+   
     .active {
       background: $color-secondary-bg;
       color: $color-primary-text;
@@ -17,6 +16,9 @@
   &__list {
     list-style: none;
     display: flex;
+    @media (max-width: 1200px){
+     justify-content: center;
+    }
   }
 
   &__block {
@@ -74,7 +76,7 @@
 
   &__text--strong {
     display: block;
-     font-weight: 600;
+    font-weight: 600;
   }
 
   &__text--low {
