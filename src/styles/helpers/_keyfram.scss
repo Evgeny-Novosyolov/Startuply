@@ -97,11 +97,11 @@
 
 @keyframes dotColor {
   0% {
-    background: $color-secondary-bg;
+    background: var(--accept-color-secondary-bg);
   }
 
   100% {
-    background: $color-primary-bg;
+    background: var(--accept-color-primary-bg);
   }
 
 }

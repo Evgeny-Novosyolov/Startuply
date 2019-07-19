@@ -31,7 +31,7 @@
     }
 
     .post__date {
-      color: $color-primary-text;
+      color: var(--accept-color-primary-text);
       text-transform: uppercase;
       font-weight: 500;
       line-height: 3;
@@ -46,7 +46,7 @@
         transition: 0.5s ease-in-out 0.2s;
         transform: scale(1.1);
         transition: 0.5s ease-in-out 0.2s;
-        color: $color-tertiary-text;
+        color: var(--accept-color-tertiary-text);
       }
 
     }
@@ -75,7 +75,7 @@
       }
 
       &:hover {
-        color: $color-primary-text;
+        color: var(--accept-color-primary-text);
         text-shadow: 0px 3px 0px #b2a98f,
 
           0px 14px 10px rgba(0, 0, 0, 0.15),
@@ -115,25 +115,22 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-top: 0.1rem solid $color-primary-text;
-    // margin-left: -$offset*2;
-    // margin-right: -$offset*2;
+    border-top: 0.1rem solid var(--accept-color-primary-text);
+   
 
     .menu {
-      //flex: 1 1 70rem;
-      flex-grow: 1;
-      // max-width: 70rem;
-
+           flex-grow: 1;
+      
     }
 
     .menu__list {
       display: flex;
 
       flex-wrap: wrap;
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
+      padding-top: calc(var(--offset) * 1.6);
+      padding-bottom: calc(var(--offset) * 1.6);
 
-      @media screen and (max-width: 66rem) {
+      @media screen and (max-width: 660px) {
         justify-content: center;
       }
 
@@ -146,7 +143,7 @@
       letter-spacing: 0.5px;
       transition: all 0.3s ease-in-out 0.1s;
       &:hover {
-        color: $color-primary-text;
+        color: var(--accept-color-primary-text);
         transform: scale(1.1);
       }
       
@@ -155,8 +152,8 @@
 
   &__info {
     display: flex;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: calc(var(--offset) * 1.6);
+    padding-bottom: calc(var(--offset) * 1.6);
     text-align: center;
     a {display: block;}
   }

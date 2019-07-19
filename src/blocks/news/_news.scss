@@ -31,16 +31,16 @@
       opacity: 0.5;
       z-index: 1;
       position: absolute;
-      transition: width 1.5s, height 1.5s, border 0s;
-      border: 25rem solid rgba($color-secondary-text, 0.5)
+      transition: width 1s, height 1s, border 0s;
+      border: 35rem solid rgba(var(--color-secondary-text), 0.5)
     }
 
     &:hover {
       &::before {
         transform: translate(-50%, -50%);
-        width: 100rem;
-        height: 100rem;
-        //border: 0rem solid rgba($color-tertiary-text, 0.9)
+        width: 120rem;
+        height: 120rem;
+        //border: 0rem solid rgba(var(--color-tertiary-text), 0.9)
       }
 
       span {
@@ -63,7 +63,7 @@
       transform: translate(-50%, -50%);
       display: block;
       font-size: 5rem;
-      color: $color-tertiary-text;
+      color: var(--accept-color-tertiary-text);
       z-index: 5;
       display: none;
       opacity: 0;

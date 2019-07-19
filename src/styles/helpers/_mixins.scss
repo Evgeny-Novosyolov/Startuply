@@ -18,8 +18,8 @@
   }
 }
 @mixin WidthBlock($marg) {
-  margin-left: -$marg;
-    margin-right: -$marg;
+  margin-left: calc(#{$marg} *(-1));
+    margin-right: calc(#{$marg} *(-1));
 }
 
 @mixin marginBox ($numT, $numB) {
