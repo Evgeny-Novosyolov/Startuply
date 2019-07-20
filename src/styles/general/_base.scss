@@ -10,7 +10,7 @@
   //----text-size----
   --size-small-text: 1.4rem;
 
-  --size-primary-text: 1.6rem;
+  --size-primary-text: 1.5rem;
   --size-secondary-text: 1.8rem;
   --size-tertiary-text: 2.4rem;
   --size-comment-text: 2.6rem;
@@ -196,6 +196,11 @@ body {
 
 .stats__num {
   font-size: var(--size-num-text);
+  @media (max-width:720px){
+    font-size: 2rem;
+  }
+
+  
 }
 
 .text--tertiary {

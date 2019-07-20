@@ -15,9 +15,16 @@
   .box--right {
     position: relative;
     display: flex;
+    height: auto;
+   
+    
     @media (max-width: 1200px){
       justify-content: center;
       margin-top: calc(var(--margin-primary-top) *1.2);
+      iframe{
+        width: 560px;
+         min-height: 315px;
+      }
     }
     
 

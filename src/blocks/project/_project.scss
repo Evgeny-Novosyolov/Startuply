@@ -42,9 +42,10 @@
     cursor: pointer;
 
     &:hover .project__box-wrapper {
-      transform: rotateY(180deg);
+      transform: rotateY(180deg) scale(1.1);
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
     }
-
+    
     &-wrapper {
       position: relative;
       transform-style: preserve-3d;
@@ -139,14 +140,17 @@
     &:hover~.social__list li {
       &:first-child {
         animation: projectShowSocial 0.4s ease-out 0.2s both;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
       }
 
       &:nth-child(2) {
         animation: projectShowSocial 0.4s ease-out 0.3s both;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
       }
 
       &:nth-child(3) {
         animation: projectShowSocial 0.4s ease-out 0.4s both;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
       }
     }
 
