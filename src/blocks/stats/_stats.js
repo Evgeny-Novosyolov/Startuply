@@ -2,26 +2,27 @@ window.addEventListener('DOMContentLoaded', function () {
 
   const statsItem = document.querySelectorAll(".stats__num");
 
+  const statsSection = document.querySelector(".stats");
 
+  window.addEventListener("mouseover", function () {
+        
+    if (event.target.classList.contains("stats")){
+      statsItem.forEach((item) => {
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY + (screen.availHeight - statsItem.offsetHeight) + 100 < statsItem.offsetTop) return;
-
-
-    statsItem.forEach((item) => {
-
-      let numMax = +item.dataset.num;
-      let numStats = 0;
-      const addNum = setInterval(function () {
-        if (numMax == numStats) {
-          clearInterval(addNum);
-        }
-        numStats++;
-        item.innerHTML = numStats - 1;
-      }, 5)
-    })
-
+        let numMax = +item.dataset.num;
+        let numStats = 0;
+        const addNum = setInterval(function () {
+          if (numMax == numStats) {
+            clearInterval(addNum);
+          }
+          numStats++;
+          item.innerHTML = numStats - 1;
+        }, 5)
+      })
+    
+    }   
   });
+
 
     const btnVideo = document.querySelector('.play-video');
     const btnParent = document.querySelector('.play__wrapper');

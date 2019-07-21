@@ -287,7 +287,7 @@
 
 .footer {
   padding-top: calc(var(--margin-primary-top) * 1.87); //*1.87
-  background: linear-gradient(to right, rgba(var(--color-primary-bg), 1) 40%, rgba(var(--color-secondary-bg), 1) 100%);
+  background: linear-gradient(to right, rgba(var(--color-primary-bg), 1) 20%, rgba(var(--color-secondary-bg), 1) 50%, rgba(var(--color-secondary-bg), 1) 100%);
   clip-path: polygon(0% 100%, 100% 100%, 100% 21%, 0% 0%);
 
   &__header {

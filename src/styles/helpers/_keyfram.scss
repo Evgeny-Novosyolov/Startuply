@@ -110,7 +110,7 @@
 @keyframes listShow {
   0% {
     opacity: 0;
-    height: 0;
+    height: 100%;
   }
 
   20% {
@@ -240,5 +240,17 @@
   100%{
     opacity: 1;
   }
+}
+
+@keyframes marginBox{
+  0%{
+    margin-left: 0%;
+  }
+  
+  100%{
+    margin-left: -100%;
+  }
+  
+  
 }
 
