@@ -195,25 +195,25 @@
     left: 90%;
   }
 
-  .layer {
+  .layer--footer {
     position: absolute;
     transform-origin: center;
     border-radius: 100%;
   }
 
-  .layer-1 {
+  .layer--footer-1 {
     z-index: 3;
     width: 1000px;
     height: 1000px;
     transform-origin: center;
     z-index: 1;
   }
-  .layer-2 {
+  .layer--footer-2 {
     background-size: cover;
     opacity: 0.4;
     z-index: 2;
   }
-  .layer-2 {
+  .layer--footer-3 {
     background-size: cover;
     z-index: 3;
   }
@@ -221,8 +221,8 @@
   .scene--footer-1 {
 
     .layer--footer-1 {
-      background: linear-gradient(to right, rgba(var(--color-primary-bg), 1) 40%, rgba(var(--color-primary-bg), 1) 100%);
-      box-shadow: inset 0px 0px 49px 3px rgba(var(--color-primary-bg), 0.4);
+      background: linear-gradient(to right, rgba(var(--color-primary-bg), 1) 40%, rgba(var(--color-secondary-bg), 0.7) 100%);
+      box-shadow: inset 0px 0px 20px 20px rgba(var(--color-primary-bg), 0.3);
       width: 500px;
       height: 500px;
 
@@ -230,8 +230,8 @@
 
 
     .layer--footer-2 {
-      background: url("https://www.meme-arsenal.com/memes/8492a2106037794c58aab47ea24ef699.jpg") center no-repeat;
-       box-shadow: inset 0px 0px 49px 3px rgba(var(--color-primary-bg), 0.75);
+      //background: url("https://www.meme-arsenal.com/memes/8492a2106037794c58aab47ea24ef699.jpg") center no-repeat;
+       box-shadow: inset 0px 0px 35px 10px rgba(var(--color-primary-bg), 0.75);
        width: 200px;
        height: 200px;
        background-position: 50% 30%;
@@ -239,9 +239,9 @@
     }
 
     .layer--footer-3 {
-      background: url("https://www.meme-arsenal.com/memes/8492a2106037794c58aab47ea24ef699.jpg") center no-repeat;
+     // background: url("https://www.meme-arsenal.com/memes/8492a2106037794c58aab47ea24ef699.jpg") center no-repeat;
        background: linear-gradient(to right, rgba(var(--color-primary-bg), 1), rgba(var(--color-primary-bg), 1));
-      box-shadow: 0px 0px 49px 10px rgba(var(--color-primary-bg), 1);
+      box-shadow: 0px 0px 49px 20px rgba(var(--color-primary-bg), 1);
      
       width: 200px;
       height: 200px;
@@ -251,21 +251,21 @@
   .scene--footer-2 {
     .layer--footer-1 {
       background: linear-gradient(to right, rgba(var(--color-secondary-bg), 1) 40%, rgba(var(--color-secondary-bg), 1) 100%);
-      box-shadow: inset 0px 0px 49px 3px rgba(var(--color-secondary-bg), 0.4);
+      box-shadow: inset 0px 0px 49px 100px rgba(var(--color-primary-bg), 0.5);
    
     }
 
 
     .layer--footer-2 {
-      background: url("https://bigpicture.ru/wp-content/uploads/2018/09/3-19.jpg") center no-repeat;
-      box-shadow: inset 0px 0px 49px 3px rgba(var(--color-secondary-bg), 0.75);
+     // background: url("https://bigpicture.ru/wp-content/uploads/2018/09/3-19.jpg") center no-repeat;
+      box-shadow: inset 0px 0px 49px 20px rgba(var(--color-secondary-bg), 0.75);
       width: 300px;
        height: 300px;
       background-position: 50% 50%;
     }
 
     .layer--footer-3 {
-      background: url("https://bigpicture.ru/wp-content/uploads/2018/09/3-19.jpg") center no-repeat;
+     // background: url("https://bigpicture.ru/wp-content/uploads/2018/09/3-19.jpg") center no-repeat;
       background: linear-gradient(to right, rgba(var(--color-secondary-bg), 1), rgba(var(--color-secondary-bg), 1));
       box-shadow: 0px 0px 49px 10px rgba(var(--color-secondary-bg), 1);
       width: 300px;

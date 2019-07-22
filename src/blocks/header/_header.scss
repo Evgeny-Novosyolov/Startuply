@@ -339,10 +339,11 @@
       }
     }
   }
+  
 }
 
 
-.scene {
+.scene--header {
   position: absolute;
   top: 110%;
   left: 100%;
@@ -363,7 +364,7 @@
   }
 }
 
-.layer {
+.layer--header {
   position: absolute;
   width: 300px;
   height: 300px;
@@ -371,7 +372,7 @@
   border-radius: 100%;
 }
 
-.layer-1 {
+.layer--header-1 {
   background: linear-gradient(to right, rgba(var(--color-secondary-bg), 1) 40%, rgba(var(--color-secondary-bg), 1) 100%);
   z-index: 3;
   width: 1000px;
@@ -383,7 +384,7 @@
 }
 
 
-.layer-2 {
+.layer--header-2 {
   background: url("https://bigpicture.ru/wp-content/uploads/2018/09/3-19.jpg") center no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -394,7 +395,7 @@
   background-position: 50% 50%;
 }
 
-.layer-3 {
+.layer--header-3 {
   background: url("https://bigpicture.ru/wp-content/uploads/2018/09/3-19.jpg") center no-repeat;
   background-size: cover;
   background: linear-gradient(to right, rgba(var(--color-secondary-bg), 1), rgba(var(--color-secondary-bg), 1));
