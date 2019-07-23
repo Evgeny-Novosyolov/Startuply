@@ -22,45 +22,47 @@
     }
   }
 
-  &__post {
-    li {
-      transition: 0.5s ease-in-out 0.2s;
+  &__post{
+    .footer__text{
+      transition: 0.5s linear;
+    
     }
+    .post__link {
+      transition: 0.5s linear;
+      
+      &:hover {
+        .footer__text, .post__date{
+          color: rgba(var(--color-tertiary-text), 0.5);
+          font-size: 150%;
+        }
+        
+      }
+    
+      
+      
 
-    a {
-      transition: 0.5s ease-in-out 0.2s;
     }
+   
 
-    .post__date {
+       .post__date {
+        transition: 0.5s linear;
       color: var(--accept-color-primary-text);
       text-transform: uppercase;
       font-weight: 500;
       line-height: 3;
     }
 
-    li:hover {
-
-      transform: translateY(-0.5rem);
-
-      a {
-        text-shadow: 3px 3px 2px rgba(145, 150, 150, 1);
-        transition: 0.5s ease-in-out 0.2s;
-        transform: scale(1.1);
-        transition: 0.5s ease-in-out 0.2s;
-        color: var(--accept-color-tertiary-text);
-      }
-
-    }
+    
   }
 
-  &__link,
-  &__twitter {
+  &__link{
     a {
       display: block;
       position: relative;
-      transition: 0.2s;
+      transition: 0.5s;
       text-decoration: none;
       color: inherit;
+
 
       &::before {
         content: "";
@@ -77,14 +79,9 @@
 
       &:hover {
         color: var(--accept-color-primary-text);
-        text-shadow: 0px 3px 0px #b2a98f,
-
-          0px 14px 10px rgba(0, 0, 0, 0.15),
-
-          0px 24px 2px rgba(0, 0, 0, 0.1),
-
-          0px 34px 30px rgba(0, 0, 0, 0.1);
+        text-shadow: 1rem 1rem 1rem #ccc;
         transform: translateY(-0.2rem);
+        letter-spacing: 0.1rem;
 
         &::before {
           animation: arrowShow 1s linear 0.2s infinite;
@@ -94,6 +91,27 @@
 
     }
   }
+  &__twitter {
+    a {
+      display: block;
+      position: relative;
+      transition: 0.2s;
+      text-decoration: none;
+      color: inherit;
+     
+      &:hover {
+        color: var(--accept-color-primary-text);
+        text-shadow: 1rem 1rem 1rem #ccc;
+        transform: translateY(-0.2rem);
+
+      }
+
+    }
+  }
+
+
+
+
 
   &__twitter {
     .twitter__date {

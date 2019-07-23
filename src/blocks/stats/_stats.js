@@ -28,11 +28,6 @@ function showNum() {
 }
 
 
-
-
-
-
-
   const btnVideo = document.querySelector('.play-video');
   const btnParent = document.querySelector('.play__wrapper');
   const videoBox = document.querySelector('.video');

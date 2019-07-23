@@ -109,28 +109,37 @@
 
 @keyframes listShow {
   0% {
+    margin-top: -65;
     opacity: 0;
-    height: 100%;
+    z-index: -1;
+    height: 50%;
   }
 
   20% {
+    margin-top: -55%;
     opacity: 0;
-    height: 20%;
-  }
-
-  40% {
-    opacity: 0;
-    height: 40%;
+    z-index: 1;
   }
 
   80% {
+    margin-top: -10%;
     opacity: 0;
-    height: 60%;
+    z-index: -1;
+  }
+
+  90% {
+    margin-top: 10%;
+    opacity: 0.2;
+    z-index: 1;
+
   }
 
   100% {
+    position: relative;
+    margin-top: 0%;
     opacity: 1;
-    height: auto;
+    z-index: 1;
+    height: 100%;
   }
 }
 
@@ -220,37 +229,39 @@
 
 @keyframes pulse {
   0% {
-    transform: scale(1); 
+    transform: scale(1);
     opacity: 0;
   }
+
   50% {
-    transform: scale(0.6); 
-     opacity: 1;
+    transform: scale(0.6);
+    opacity: 1;
   }
+
   100% {
-    transform: scale(1.2); 
+    transform: scale(1.2);
     opacity: 0;
   }
 }
 
-@keyframes video{
-  0%{
+@keyframes video {
+  0% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes marginBox{
-  0%{
+@keyframes marginBox {
+  0% {
     margin-left: 0%;
   }
-  
-  100%{
+
+  100% {
     margin-left: -100%;
   }
-  
-  
-}
 
+
+}
